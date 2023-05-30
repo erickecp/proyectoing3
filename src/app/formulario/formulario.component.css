@@ -1,0 +1,45 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+  
+  mat-card {
+    max-width: 460px;
+    width: 100%; /* Aseguramos que el ancho del mat-card sea del 100% */
+  }
+  
+  .centrar{
+    text-align: center;
+  }
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alinear los elementos del formulario en una columna */
+  }
+  
+  form {
+    .mat-form-field {
+      width: 100%;
+      min-width: 300px;
+    }
+  
+    .error {
+      padding: 16px;
+      width: 300px;
+      color: white;
+      background-color: red;
+    }
+  
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    mat-card {
+      max-width: 100%; /* Ajustamos el ancho máximo del mat-card para dispositivos móviles */
+    }
+  }
+  

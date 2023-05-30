@@ -5,17 +5,27 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import { PracticaComponent } from './practica/practica.component';
+import { LoginComponent } from './login/login.component';
+import { FormularioComponent } from './formulario/formulario.component';
+
+//Angular Material que uso Cesar
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PracticaComponent
+    PracticaComponent,
+    LoginComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +35,13 @@ import { PracticaComponent } from './practica/practica.component';
     MatInputModule,
     MatButtonModule,
     MatListModule,
-    FormsModule ],
+    FormsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatSnackBarModule,
+    MatCardModule,
+    ReactiveFormsModule
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })
