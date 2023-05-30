@@ -11,8 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import { PracticaComponent } from './practica/practica.component';
-import { LoginComponent } from './login/login.component';
-import { FormularioComponent } from './formulario/formulario.component';
+import { LoginComponent } from './components/login/login.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 //Angular Material que uso Cesar
 import {MatFormFieldModule} from '@angular/material/form-field';
