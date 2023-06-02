@@ -47,7 +47,6 @@ import { ProductosComponent } from './components/productos/productos.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  exports:[ProductosComponent, ProductoComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
