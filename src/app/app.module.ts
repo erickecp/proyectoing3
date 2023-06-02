@@ -19,13 +19,17 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCardModule } from '@angular/material/card';
+import { ProductoComponent } from './components/producto/producto.component';
+import { ProductosComponent } from './components/productos/productos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PracticaComponent,
     LoginComponent,
-    FormularioComponent
+    FormularioComponent,
+    ProductoComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,7 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     AppRoutingModule
   ],
+  exports:[ProductosComponent, ProductoComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
