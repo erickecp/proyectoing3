@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceAlertasService } from '../services/service-alertas.service';
 
 @Component({
   selector: 'app-practica',
@@ -13,5 +14,6 @@ export class PracticaComponent {
   sumar() {
     this.resultado = this.valor1 + this.valor2;
   }
+
 
 }
